@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap');
+
+body {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+header.transparent {
+    background-color: transparent;
+    color: white;
+}
+
+header.visible {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.lang-menu select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    margin-left: auto;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.lang-menu {
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 14px;
+}
+
+.nav-menu li, .lang-menu li {
+    display: inline;
+}
+
+.nav-a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 20px;
+    color: white;
+}
+
+header.visible .nav-a {
+    color: black;
+}
+
+.nav-a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #e7843d;
+    box-shadow: 0px 0px 5px black;  
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.nav-contact {
+    text-decoration: none;
+    color: white;
+    background-color: #e7843d;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.nav-contact:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 2px solid #e7843d;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    height: 100vh;
+    background-image: url("BGHOME.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("BGHOME.jpg");
+}
+
+#home > div {
+    flex: 1;
+}
+
+#home h1 {
+    font-size: 44px;
+    color: white;
+    text-shadow: 3px 3px 5px #e7843d;
+    letter-spacing: 2px;
+}
+
+#home h2 {
+    font-size: 88px;
+    color: white;
+    text-shadow: 3px 3px 5px #e7843d;
+    margin-top: -70px;
+    letter-spacing: 2px;
+}
+
+#home p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -100px;
+    font-size: 44px;
+    font-weight: 200;
+    color: white;
+    text-shadow: 3px 3px 5px #e7843d;
+    letter-spacing: 3px;
+}
+
+#home a {
+    background-color: #e7843d;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#home a:hover {
+    background-color: #f3904a;;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+}
+
+#home a:last-child {
+    background-color: transparent;
+    color: white;
+    text-shadow: 3px 3px 5px #e7843d;
+    letter-spacing: 2px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-image {
+    flex: 0 0 50%;
+    text-align: center;
+    margin-top: -70px;
+}
+
+.about-image img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 20%;
+}
+
+.abouttitle {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 2px;
+    margin-right: 50px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.about-text h2 {
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    color: #e7843d;
+    text-shadow: 1px 1px 2px black;
+}
+
+.btn-about {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e7843d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-about:hover{
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: white;
+    color: #e7843d;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid ;
+    transition: background-color 0.4s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+
+.portfolio-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.portfolio-item {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: #007bff;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+/*  */
+
+.what-i-do {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.what-i-do h2 {
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    color: #e7843d;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.2em;
+    color: #6a1b9a;
+}
+
+
+
+/* contact */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #007bff;
+}
+
+.contact-info, .contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 300px;
+}
+
+.contact-info h2 {
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-info img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.contact-form {
+    flex: 2;
+    max-width: 500px;
+}
+
+.contact-form h2 {
+    color: black;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        z-index: 1000; /* Pastikan ini cukup tinggi untuk berada di depan elemen lain */
+        
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 22px;
+        right: 0;
+        list-style: none;
+        box-shadow: 3px 5px 5px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        background-color: white;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        justify-content: center; /* Vertically centers the content */
+        align-items: center; /* Horizontally centers the content */
+        opacity: 0.8; /* 80% opacity for the entire element */
+
+    }
+    .nav-a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+
+    }
+    .nav-contact{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+       
+    }
+    .nav-menu li {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .lang-menu {
+        position: absolute;
+        right: 15px;
+    }
+    .logo {
+        font-size: 19px;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+   
+    #home {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content horizontally */
+        padding: 10px 20px;
+        height: 100vh;
+        width: 100%;
+        background-image: url("BGHOME.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #home > div {
+        flex: 1;
+    }
+    
+    #home h1 {
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+    
+    #home h2 {
+        font-size: 30px;
+        color:white;
+        margin-bottom: 10px;
+        background-color: #4077e6;
+        padding: 10px 20px;
+        border-radius: 8px;
+        width: 77%;
+    }
+    
+    #home p {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    
+    #home a {
+        background-color: #4077e6;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+    
+    #home a:hover {
+        background-color: #305ea8;
+    }
+    
+    #home a:last-child {
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+    }
+    
+
+
+    /* about */
+    .about-container {
+        flex-direction: column; /* Tata letak menjadi kolom */
+    }
+
+    .about-image,
+    .about-text {
+        flex: 1; /* Setiap elemen mengisi lebar penuh */
+        padding: 20px; /* Tambahkan ruang di sekitar setiap elemen */
+        text-align: center; /* Pusatkan konten pada perangkat seluler */
+
+    }
+
+    .about-image {
+        order: -1; /* Pindahkan gambar di bawah teks */
+    }
+}
+
