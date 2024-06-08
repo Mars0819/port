@@ -2,9 +2,11 @@
 const translations = {
     en: {
         titleabout: "About Me",
+        salam:"Hi i'm,",
         aboutp: "I am Umar, a recent graduate of the Computer Engineering program at Tanri Abeng University, with a keen aspiration to establish myself as a Software Engineer. Demonstrating adaptability and a profound sense of accountability, I am enthusiastic about harnessing and honing my skill set in the field of Software Engineering. Let's build something extraordinary together!",
     },
     id: {
+        salam:"Hai Saya,",
         titleabout: "Tentang Saya",
         aboutp: "Saya adalah Umar, lulusan baru program Teknik Komputer di Universitas Tanri Abeng, dengan aspirasi kuat untuk menjadikan diri saya sebagai seorang Insinyur Perangkat Lunak. Dengan menunjukkan adaptabilitas dan rasa tanggung jawab yang mendalam, saya antusias untuk mengembangkan dan menyempurnakan keterampilan saya di bidang Rekayasa Perangkat Lunak. Mari kita bangun sesuatu yang luar biasa bersama-sama.",
     }
@@ -12,6 +14,7 @@ const translations = {
 };
 // pengubah bahasa
 function switchLanguage(language) {
+    document.getElementById('salam').textContent = translations[language].salam;
     document.getElementById('titleabout').textContent = translations[language].titleabout;
     document.getElementById('aboutp').textContent = translations[language].aboutp;
 }

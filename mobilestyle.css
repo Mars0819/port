@@ -1,0 +1,189 @@
+
+@media (max-width: 768px) {
+    body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header.transparent {
+        background-color: transparent;
+        color: white;
+    }
+    
+    header.visible {
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: color 0.3s ease-in-out;
+    }
+
+     .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        z-index: 1000; /* Pastikan ini cukup tinggi untuk berada di depan elemen lain */
+        color: white;
+    }
+    header.visible .menu-icon{
+        color: black;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        list-style: none;
+        box-shadow: 3px 5px 5px 4px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        background-color: white;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        justify-content: center; /* Vertically centers the content */
+        align-items: center; /* Horizontally centers the content */
+
+    }
+    .nav-a{
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+
+    }
+   
+    .nav-contact{
+        text-decoration: none;
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+       color: white;
+       margin-left: 10px;
+    }
+    .nav-menu li {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .lang-menu {
+        position: absolute;
+        right: 15px;
+    }
+    .logo {
+        font-size: 19px;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+
+   
+    /* homeee */
+    #home {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content horizontally */
+        padding: 10px 20px;
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        letter-spacing: 2px; 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mobilehome2.jpg");
+    }
+    
+    #home > div {
+        flex: 1;
+    }
+    
+    #home h1 {
+    margin-left:20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    }
+    
+    #home h2 {
+        font-size: 42px;
+        margin-bottom: 100px;
+        padding: 10px 20px;
+        width: 77%;
+    }
+    
+    #home p {
+        margin-left: 20px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    
+    #home a {
+        margin-left: 20px;
+        background-color: #4077e6;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+    
+    #home a:hover {
+        background-color: #305ea8;
+    }
+    
+    #home a:last-child {
+        margin-left: -10px;
+        background-color: transparent;
+    }
+    
+    
+    /* about */
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Tinggi penuh layar */
+        margin-top: 50px; /* Margin atas 100px */
+        box-sizing: border-box;
+        padding-left: 80px;
+        
+    }
+
+    .about-image,
+    .about-text {
+        flex: 1; /* Setiap elemen mengisi lebar penuh */
+        text-align: center; /* Pusatkan konten pada perangkat seluler */
+
+    }
+
+    .about-image {
+        order: 2; /* Pindahkan gambar di bawah teks */
+        margin-top: 20px;
+        margin-right: 25px;
+    
+    }
+    .about-image img {
+        max-width: 60%;
+        border-radius: 20%;
+        margin-right: 35px;
+    }
+    
+    .contact-container {
+        flex-direction: column; /* Stack elements vertically */
+        width: 300px;
+        align-items: stretch; /* Ensure full width on mobile */
+
+    }
+
+    .contact-info, .contact-form {
+        max-width: none; /* Remove max-width constraints */
+        
+    }
+    
+
+}
+
+
+
